@@ -4,6 +4,17 @@
     box-sizing: border-box;
 }
 
+body {
+    overflow-x: hidden;
+}
+
+@media screen and (max-width:478px) {
+    body {
+        overflow-x: hidden !important;
+        border: 1px solid #0099ff;
+    }
+}
+
 
 
 #navbaba {
@@ -23,14 +34,23 @@
 
 @media screen and (max-width:478px) {
     #navbarTogglerDemo01 {
-
+        background-color: #128fdc;
+        border-radius: 7px;
+        padding: 5px;
+        z-index: 200;
         margin-left: 200px;
         font-weight: bold;
-
-
     }
 }
 
+
+@media (min-width:478px)and(max-width:768px) {
+    #navbarTogglerDemo01 {
+        background-color: #128fdc;
+        border-radius: 7px;
+        padding: 5px;
+    }
+}
 
 a {
     color: white !important;
@@ -65,9 +85,10 @@ a {
     .logo {
         margin-right: px;
         /* width: 250px; */
+    }
 
-
-
+    .container {
+        margin: -5px !important;
     }
 }
 
@@ -231,7 +252,7 @@ a {
 
 .title {
     font-size: 28px;
-    color: royalblue;
+    color: #128fdc;
     font-weight: 600;
     letter-spacing: -1px;
     position: relative;
@@ -248,13 +269,13 @@ a {
     width: 16px;
     border-radius: 50%;
     left: 0px;
-    background-color: royalblue;
+    background-color: #128fdc;
 }
 
 .title::before {
     width: 18px;
     height: 18px;
-    background-color: royalblue;
+    background-color: #128fdc;
 }
 
 .title::after {
@@ -274,11 +295,11 @@ a {
 }
 
 .signin a {
-    color: royalblue;
+    color: #128fdc;
 }
 
 .signin a:hover {
-    text-decoration: underline royalblue;
+    text-decoration: underline #128fdc;
 }
 
 .flex {
@@ -328,7 +349,7 @@ a {
 .submit {
     border: none;
     outline: none;
-    background-color: royalblue;
+    background-color: #128fdc;
     padding: 10px;
     border-radius: 10px;
     color: #fff;
@@ -349,5 +370,21 @@ a {
     to {
         transform: scale(1.8);
         opacity: 0;
+    }
+}
+
+
+#grid {
+    margin-left: 15%;
+}
+
+@media screen and (max-width:478px) {
+    #grid {
+        flex-direction: column;
+        margin-left: 7%;
+    }
+
+    #bonus {
+        margin-left: 3% !important;
     }
 }
