@@ -375,7 +375,7 @@ a {
 
 
 #grid {
-    margin-left: 15%;
+    margin-left: 3%;
 }
 
 @media screen and (max-width:478px) {
@@ -388,3 +388,15 @@ a {
         margin-left: 3% !important;
     }
 }
+
+#img2{
+    width: 350px;
+}
+
+@media (min-width:478px)and(max-width:768px) {
+    #img2 {
+        width: -px !important;
+        
+    }
+}
+
