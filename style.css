@@ -4,16 +4,6 @@
     box-sizing: border-box;
 }
 
-body {
-    overflow-x: hidden;
-}
-
-@media screen and (max-width:478px) {
-    body {
-        overflow-x: hidden !important;
-        border: 1px solid #0099ff;
-    }
-}
 
 
 
@@ -295,7 +285,8 @@ a {
 }
 
 .signin a {
-    color: #128fdc;
+    color: black;
+    z-index: 200;
 }
 
 .signin a:hover {
@@ -389,14 +380,19 @@ a {
     }
 }
 
-#img2{
-    width: 350px;
-}
-
-@media (min-width:478px)and(max-width:768px) {
-    #img2 {
-        width: -px !important;
-        
+@media screen and (max-width:478px) {
+    #manager1 {
+        width: 300px;
     }
 }
 
+#img2 {
+    max-width: 300px;
+}
+
+@media (min-width:768px)and(max-width:2560px) {
+    #img2 {
+        margin-top: 30px;
+        width: 350px;
+    }
+}
